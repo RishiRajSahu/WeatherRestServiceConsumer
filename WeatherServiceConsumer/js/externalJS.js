@@ -1,3 +1,4 @@
+//Global App Variable
 var app = angular.module('mainModule', []);
 // Set up a controller and define a model
 app.controller('tempCtrl', function($scope, $http) {
