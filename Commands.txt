@@ -1,0 +1,16 @@
+
+
+//To Start the embeddedJettyServer
+mvn exec:java -Dexec.mainClass="com.weather.jetty.server.Main"
+
+//
+mongod --dbpath="E:\work\mongoDatabase"  // start service
+use dbname       // use database with dbname
+show dbs         // show all dbs available
+show collections  // show all collections of the selected db
+
+db.DB_NAME.find();      // select all record of the selected collection
+db.DB_NAME.find().pretty();   // select all record of the selected collection and display in pretty format
+
+
+db.weather.find({"serviceType" : "HUMIDITY_SERVICE"}).pretty();
