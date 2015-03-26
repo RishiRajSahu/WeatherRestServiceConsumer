@@ -14,3 +14,7 @@ db.DB_NAME.find().pretty();   // select all record of the selected collection an
 
 
 db.weather.find({"serviceType" : "HUMIDITY_SERVICE"}).pretty();
+
+
+//start chrome 
+chrome.exe --disable-web-security
