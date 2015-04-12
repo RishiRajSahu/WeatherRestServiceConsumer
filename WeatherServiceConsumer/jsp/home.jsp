@@ -20,7 +20,23 @@
 		<!-- Change the second class above to change the header graphic -->
 		</div>
 			<div id="main-content">
-			<div id="loc" style=" margin: 0px; width: 400px; height: 25px; font-size: 25px; font-style: bold; ">Udaipur</div>
+		<!-- Adding input from user for country and city -->
+
+			<div id="loc" ng-controller="locCtrl" style=" margin: 0px; width: 1000px; height: 25px; font-size: 18px; font-style: bold;">
+			  <form>
+			       <style scoped>
+						.button-xsmall {
+						font-size:70%;
+						}
+			       </style>
+			        Country Name: <input type="text" name ="Country" ng-model="country">
+			        &nbsp; &nbsp;
+			        City Name: <input type="text" name="City" ng-model="city">
+			        <button type="button"  class="button-xsmall pure-button" ng-click="change()">Get Weather Update</button>
+			 </form>
+			</div>
+			
+		<!-- Weather condition found from country and city -ends here -->
 			<div id="left-upper"   ng-controller="tempCtrl">
 			<div style=" float: left;  margin-left: 100px; margin-top: 18px;    margin-bottom: 0;">
 				<img src="../img/temp.jpg"  alt="temperature" height = "35" width= "25" style="">
