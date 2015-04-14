@@ -22,7 +22,7 @@
 			<div id="main-content">
 		<!-- Adding input from user for country and city -->
 
-			<div id="loc" ng-controller="locCtrl" style=" margin: 0px; width: 1000px; height: 25px; font-size: 18px; font-style: bold;">
+			<div id="loc" ng-controller="EventCtrl" style=" margin: 0px; width: 1000px; height: 25px; font-size: 18px; font-style: bold;">
 			  <form>
 			       <style scoped>
 						.button-xsmall {

@@ -50,7 +50,7 @@ app.controller('windCtrl', function($rootScope,$scope,$http) {
 	$scope.$on("myEvent", function (event, args) {
 		//alert("windCtrl");
 		$scope.wind = {};	
-		$http.get("http://api.openweathermap.org/data/2.5/weather?q=London,uk")
+		$http.get($rootScope.windUrl)
 		.success(function (data) {
 				//alert("wind");
 				angular.element('#wind').scope().wind = data;
@@ -63,7 +63,7 @@ app.controller('humidCtrl', function($rootScope,$scope,$http) {
 	$scope.$on("myEvent", function (event, args) {
 		//alert("humidCtrl");
 		$scope.humid = {};	
-		$http.get("http://api.openweathermap.org/data/2.5/weather?q=London,uk")
+		$http.get($rootScope.humidityUrl)
 		.success(function (data) {
 				angular.element('#humiditiy').scope().humid = data;
 				angular.element('#humiditiy').scope().$apply();
